@@ -1,0 +1,59 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage{geometry}
+\geometry{a4paper,
+          total={165mm,257mm},
+          left=30mm,
+          top=20mm,
+         }
+
+\usepackage{cmap}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{csquotes}
+
+% \usepackage[
+%     backend = biber,
+%     style = numeric,
+% ]{biblatex}
+
+% \addbibresource{Refs.bib}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{subcaption}
+
+% \usepackage{amsmath}
+
+
+\title{Изучение влияния напряжений $U_1$ и $U_R$ на форму частотных 
+сканов транзисторов КТ117Б}
+\author{Богачев А.М.}
+\date{\today}
+
+
+\begin{document}
+
+    \maketitle
+    \begin{abstract}
+        В отчёте приведены результаты измерений, целью которых было
+        изучение влияния напряжений $U_1$ и $U_r$ на форму частотных 
+        сканов. Объект исследования -- p-n-переходы транзистора 
+        КТ117Б~№1. Зафиксированны частотные сканы для всех возможных пар
+        значений $U_1$ (от -1~В до -11~В) и $U_R$ (от -2~В до -12~В). 
+        Измерения проводились при трёх значениях температуры: 263~К, 
+        283~К и 303~К. Идентифицированны параметры моделей чачтотных 
+        сканов. В отчёте приведены графики экспериментальных данных, 
+        графики с результатами идентификации параметров моделей частотных 
+        сканов и графики зависимости коэффициента $p$ от различных 
+        значений разности $U_R - U_1$ для каждой из температур.
+    \end{abstract}
+
+    \include{introduction}
+
+    \include{results}
+
+\end{document}
